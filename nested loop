@@ -1,0 +1,53 @@
+#nestedloop
+#demo1
+#w.p.p to display avaliable colours and sizes of the products in ecommerece application using nested loop concept
+#business requirement:
+'''
+1.create list of colours like red,blue,green
+2. create list to hold sizes like small,l=medium,large
+3.use nested loop to generate all the possible combinations of colours associated with sizes for user to be select appropriate product.'''
+colour=["red","green","blue"]
+size=["small","medium","large"]
+for row in colour:
+  for col in size:
+    print(f"colour:{row},size :{col}")
+
+
+#demo2
+#program to perform matrix
+x=[[1,2,3],
+  [4,5,6],
+  [7,8,9]]
+y=[[9,8,7],
+  [6,5,4],
+  [3,2,1]]
+res=[[0,0,0],
+     [0,0,0],
+     [0,0,0]]
+#nested outer loop for row track
+for i in range(len(x)):
+  #to track coloum we need inner loop
+  for j in range(len(x[0])):
+    #write a logic to perfor, addition
+    res[i][j]=x[i][j]+y[i][j]
+#to display resultant matrix we need one for loop
+for z in res:
+  print(z)
+
+
+
+
+#demo3
+#w.p.p to print multiplication tables from 2 to 10 using nested loop
+for i in range(2,11):
+  for j in range(1,11):
+    print(i,"*",j,"=",i*j)
+
+
+
+#demo4
+for i in range(2,21):
+  for j in range(1,21):
+    print(i,"*",j,"=",i*j)
+    print("\n")
+  
